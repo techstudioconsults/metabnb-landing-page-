@@ -1,9 +1,18 @@
 import React from 'react';
 import { Button } from '@chakra-ui/react';
 
-const ButtonVariant = ({ isMobile, bg, color, name, width, height }) => {
+const ButtonVariant = ({
+  onClick,
+  isMobile,
+  bg,
+  color,
+  name,
+  width,
+  height,
+}) => {
   return (
     <Button
+      onClick={onClick}
       display={{
         base: isMobile ? `block` : `none`,
         xl: `block`,
