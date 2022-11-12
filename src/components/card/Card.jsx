@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react';
-import { frame1, star } from '../../assets/images-and-icons';
+import { frame1, like, star } from '../../assets/images-and-icons';
 
 const Card = () => {
   return (
@@ -11,12 +11,13 @@ const Card = () => {
       borderRadius={`15px`}
     >
       <Box
+        pos={`relative`}
         borderRadius={`15px`}
         overflow={`hidden`}
-        // width={`16.25rem`}
         height={`16.563rem`}
       >
-        <Image className="cc-img-fluid" alt={`frame`} src={frame1} />
+        <Image className="cc-img-fluid" alt={`frame`} src={frame1}></Image>
+        <Image pos={`absolute`} top={0} right={0} m={4} alt="like" src={like} />
       </Box>
       <Box>
         <Flex

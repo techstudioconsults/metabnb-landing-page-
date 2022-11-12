@@ -20,3 +20,4 @@ export { default as instagram } from './instagram-216-721958.png';
 export { default as twitter } from './twitter-241-721979.png';
 export { default as copyright } from './ri_copyright-line.png';
 export { default as hamburgerIcon } from './icons8-menu-rounded-30.png';
+export { default as like } from './vuesax/bold/Vector.png';

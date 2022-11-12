@@ -1,5 +1,6 @@
-import { Flex, Image, Center } from '@chakra-ui/react';
+import { Flex, Image, Center, Link } from '@chakra-ui/react';
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { Logo } from '../../assets/images-and-icons';
 import ButtonVariant from '../button/ButtonVariant';
 import Links from './NavigationLinks';
@@ -13,7 +14,9 @@ const Navbar = () => (
     height="3em"
   >
     <Center w={`14.6rem`}>
-      <Image alt="logo" src={Logo} />
+      <Link as={RouterLink} to={`/`}>
+        <Image alt="logo" src={Logo} />
+      </Link>
     </Center>
     <Links />
     <Sidenav />

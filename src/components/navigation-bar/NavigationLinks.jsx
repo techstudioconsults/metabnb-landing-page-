@@ -16,20 +16,14 @@ const Links = ({ isMobile }) => {
       <Link as={RouterLink} to={`/`}>
         <ListItem fontSize={`xl`}>Home</ListItem>
       </Link>
-      <Link as={RouterLink}>
-        <ListItem fontSize={`xl`} to={`/`}>
-          Place to stay
-        </ListItem>
+      <Link as={RouterLink} to={`/place-to-stay`}>
+        <ListItem fontSize={`xl`}>Place to stay</ListItem>
       </Link>
-      <Link as={RouterLink}>
-        <ListItem fontSize={`xl`} to={`/`}>
-          NFTs
-        </ListItem>
+      <Link as={RouterLink} to={`/nfts`}>
+        <ListItem fontSize={`xl`}>NFTs</ListItem>
       </Link>
-      <Link as={RouterLink}>
-        <ListItem fontSize={`xl`} to={`/`}>
-          Community
-        </ListItem>
+      <Link as={RouterLink} to={`/community`}>
+        <ListItem fontSize={`xl`}>Community</ListItem>
       </Link>
     </OrderedList>
   );
