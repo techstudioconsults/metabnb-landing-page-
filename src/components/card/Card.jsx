@@ -7,13 +7,13 @@ const Card = () => {
     <Box
       p={4}
       border={`1px solid lightgrey`}
-      width={`18.25rem`}
+      width={{ base: `90%`, sm: `18.25rem` }}
       borderRadius={`15px`}
     >
       <Box
         borderRadius={`15px`}
         overflow={`hidden`}
-        width={`16.25rem`}
+        // width={`16.25rem`}
         height={`16.563rem`}
       >
         <Image className="cc-img-fluid" alt={`frame`} src={frame1} />

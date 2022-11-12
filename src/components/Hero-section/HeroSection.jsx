@@ -10,6 +10,7 @@ const HeroSection = () => {
       flexDir={{ base: `column-reverse`, lg: `row` }}
       justifyContent={`space-between`}
       my={5}
+      gap={{ base: 10, lg: `initial` }}
     >
       <Flex
         flexDir={`column`}
@@ -25,14 +26,15 @@ const HeroSection = () => {
       >
         <Heading
           className="heading_title"
-          fontSize={`3.5rem`}
+          fontSize={{ base: `4xl`, sm: `3.5rem` }}
           fontWeight={`medium`}
-          lineHeight={`78.4px`}
+          lineHeight={{ base: `35px`, sm: `60px`, md: `78.4px` }}
+          color={`textBlack`}
         >
           Rent a{' '}
           <Text
             as={`span`}
-            fontSize={`3.5rem`}
+            fontSize={{ base: `4xl`, sm: `3.5rem` }}
             fontWeight={`bold`}
             color={`accent`}
           >
@@ -41,7 +43,7 @@ const HeroSection = () => {
           away from{' '}
           <Text
             as={`span`}
-            fontSize={`3.5rem`}
+            fontSize={{ base: `4xl`, sm: `3.5rem` }}
             fontWeight={`bold`}
             color={`accent`}
           >
@@ -50,7 +52,7 @@ const HeroSection = () => {
           in the{' '}
           <Text
             as={`span`}
-            fontSize={`3.5rem`}
+            fontSize={{ base: `4xl`, sm: `3.5rem` }}
             fontWeight={`bold`}
             color={`accent`}
           >
@@ -60,8 +62,8 @@ const HeroSection = () => {
 
         <Text fontSize={`2xl`} my={12} lineHeight={`2.18rem`}>
           we provide you access to luxury and affordable houses in the
-          metaverse, get a chance to turn your imagination to reality at your
-          comfort zone
+          metaverse, get a chance to turn your <br /> imagination to reality at
+          your comfort zone
         </Text>
         <SearchInput />
       </Flex>

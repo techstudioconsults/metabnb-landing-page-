@@ -48,8 +48,9 @@ const Home = () => {
           textAlign={`center`}
           mt={10}
           mb={11}
-          fontSize={`5xl`}
-          className="heading_title"
+          fontSize={{ base: `4xl`, sm: `5xl` }}
+          className="heading_title page_alignment"
+          color={`black`}
         >
           Inspiration for your next adventure
         </Heading>

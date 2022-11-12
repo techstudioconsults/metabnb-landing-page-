@@ -2,6 +2,13 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      body: {
+        color: 'textBlack',
+      },
+    },
+  },
   breakpoints: {
     sm: '30em', //320px
     md: '48em', //768px
@@ -40,6 +47,7 @@ const theme = extendTheme({
   },
   colors: {
     accent: `#A02279`,
+    textBlack: `#434343`,
     black: `#1D1D1E`,
     grey: `#D7D7D7`,
   },

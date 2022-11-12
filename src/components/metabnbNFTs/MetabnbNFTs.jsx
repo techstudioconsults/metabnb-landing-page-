@@ -10,7 +10,7 @@ const MetabnbNFTs = () => {
       color={`white`}
       alignItems={`center`}
       justifyContent={`end`}
-      gap={{ lg: 32 }}
+      gap={{base: 10, lg: 32 }}
     >
       <Box width={{ lg: `40%` }}>
         <Heading className="heading_title" fontSize={`5xl`}>

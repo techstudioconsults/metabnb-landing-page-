@@ -8,10 +8,17 @@ import React from 'react';
 
 const SearchInput = () => {
   return (
-    <FormControl>
-      <InputGroup size="lg">
-        <Input fontSize={`sm`} placeholder="Search for location" />
+    <FormControl width={{ md: `38.7rem` }}>
+      <InputGroup height={`54px`}>
+        <Input
+          borderRadius={`8px`}
+          fontSize={`sm`}
+          placeholder="Search for location"
+          height={`100%`}
+        />
         <InputRightAddon
+          height={`100%`}
+          borderRadius={`8px`}
           fontSize={`md`}
           px={`5.2rem`}
           as={`button`}
