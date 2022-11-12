@@ -3,20 +3,21 @@ import React, { Suspense } from 'react';
 import { HomePage } from './pages';
 import ErrorBoundary from './components/error-boundary/ErrorBoundary';
 import GeneralLoading from './components/general-loading/GeneralLoading';
+import DefaultLayout from './layouts/DefaultLayout';
 
 function App() {
   return (
     <BrowserRouter>
       <ErrorBoundary>
         <Suspense fallback={<GeneralLoading text={`LOADING...`} />}>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route
-              component={() => (
-                <GeneralLoading text="PAGE NOT FOUND" />
-              )}
-            />
-          </Switch>
+          <DefaultLayout>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route
+                component={() => <GeneralLoading text="PAGE NOT FOUND" />}
+              />
+            </Switch>
+          </DefaultLayout>
         </Suspense>
       </ErrorBoundary>
     </BrowserRouter>

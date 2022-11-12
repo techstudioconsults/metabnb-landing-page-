@@ -3,14 +3,18 @@
 * {
   padding: 0;
   margin: 0;
-    font-size: calc(10px + 0.410vw);
+  font-size: calc(10px + 0.41vw);
   text-decoration: none;
   list-style-type: none;
   line-height: 24px;
 
-  @media screen and (min-width: 48em) {
-    // font-size: calc(7px + 0.390625vw);
+  @media screen and (min-width: 96em) {
+    font-size: initial
   }
+}
+
+.heading_title {
+  font-family: 'Red Rose', cursive !important;
 }
 
 a {
