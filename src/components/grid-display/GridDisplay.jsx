@@ -6,9 +6,10 @@ const GridDisplay = () => {
   return (
     <SimpleGrid
       className="page_alignment"
+      px={{ md: 30, lg: 20, xl: `initial` }}
       justifyItems={`center`}
       gap={6}
-      columns={{ base: 1, sm: 2, md: 3, xl: 4 }}
+      columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
     >
       <Card />
       <Card />

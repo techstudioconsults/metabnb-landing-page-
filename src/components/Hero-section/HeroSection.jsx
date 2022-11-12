@@ -7,21 +7,22 @@ const HeroSection = () => {
   return (
     <Flex
       className="page_alignment"
-      flexDir={{ base: `column-reverse`, lg: `row` }}
+      flexDir={{ base: `column-reverse`, xl: `row` }}
       justifyContent={`space-between`}
       my={5}
       gap={{ base: 10, lg: `initial` }}
     >
       <Flex
         flexDir={`column`}
-        width={{ lg: `60%` }}
+        width={{ xl: `60%` }}
         justifyContent={`center`}
+        alignItems={{ base: `center`, xl: `initial` }}
         pr={{ lg: 20 }}
         textAlign={{
           base: `center`,
           sm: `initial`,
           md: `center`,
-          lg: `initial`,
+          xl: `initial`,
         }}
       >
         <Heading
@@ -67,7 +68,7 @@ const HeroSection = () => {
         </Text>
         <SearchInput />
       </Flex>
-      <Flex width={{ lg: `40%` }} justifyContent={{ xl: `end` }}>
+      <Flex width={{ xl: `40%` }} justifyContent={{ xl: `end` }}>
         <Image
           mx={{ base: `auto`, xl: `initial` }}
           alt="hero-image"
