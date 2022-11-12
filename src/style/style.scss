@@ -9,7 +9,7 @@
   line-height: 24px;
 
   @media screen and (min-width: 96em) {
-    font-size: initial
+    font-size: initial;
   }
 }
 
@@ -34,4 +34,8 @@ a {
   background-size: cover;
   background-position: center;
   object-fit: cover;
+}
+
+.page_alignment {
+  padding: 0 1rem;
 }

@@ -6,7 +6,7 @@ const ButtonVariant = ({ isMobile, bg, color, name, width, height }) => {
     <Button
       display={{
         base: isMobile ? `block` : `none`,
-        xl: isMobile ? `none` : `block`,
+        xl: `block`,
       }}
       bg={bg}
       color={color}

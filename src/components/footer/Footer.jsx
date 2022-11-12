@@ -5,36 +5,34 @@ import {
   GridItem,
   Heading,
   Image,
+  Center,
   Link,
-  Text,
 } from '@chakra-ui/react';
 import React from 'react';
-import {
-  copyright,
-  facebook,
-  instagram,
-  logoWhite,
-  twitter,
-} from '../../assets/images-and-icons';
+import { logoWhite } from '../../assets/images-and-icons';
+import Socials, { Copyright } from '../socials/Socials';
 
 const Footer = () => {
   return (
-    <Grid width={`100%`} templateColumns={`repeat(12, 1fr)`}>
-      <GridItem colSpan={4}>
+    <Grid
+      className="page_alignment"
+      gridRowGap={20}
+      width={`100%`}
+      templateColumns={`repeat(12, 1fr)`}
+      textAlign={{ base: `center`, lg: `initial` }}
+    >
+      <GridItem colSpan={{ base: 12, lg: 4 }}>
         <Box>
-          <Image src={logoWhite} alt={`logo`} />
+          <Image
+            mx={{ base: `auto`, lg: `initial` }}
+            src={logoWhite}
+            alt={`logo`}
+          />
         </Box>
-        <Flex gap={8} mt={`96px`} mb={`55px`}>
-          <Image src={facebook} alt={`logo`} />
-          <Image src={instagram} alt={`logo`} />
-          <Image src={twitter} alt={`logo`} />
-        </Flex>
-        <Flex alignItems={`center`} gap={2}>
-          <Image src={copyright} alt={`copyright`} />
-          <Text>2022 Metabnb</Text>
-        </Flex>
+        <Socials />
+        <Copyright />
       </GridItem>
-      <GridItem colSpan={3}>
+      <GridItem colSpan={{ base: 12, lg: 3 }}>
         <Heading fontSize={`xl`}>Community</Heading>
         <Flex flexDir={`column`} mt={`1.56rem`} gap={4}>
           <Link fontSize={`sm`}>NFT</Link>
@@ -43,7 +41,7 @@ const Footer = () => {
           <Link fontSize={`sm`}>Discord</Link>
         </Flex>
       </GridItem>
-      <GridItem colSpan={3}>
+      <GridItem colSpan={{ base: 12, lg: 3 }}>
         <Heading fontSize={`xl`}>Places</Heading>
         <Flex flexDir={`column`} mt={`1.56rem`} gap={4}>
           <Link fontSize={`sm`}>Castle</Link>
@@ -52,7 +50,7 @@ const Footer = () => {
           <Link fontSize={`sm`}>Learn more</Link>
         </Flex>
       </GridItem>
-      <GridItem colSpan={2}>
+      <GridItem colSpan={{ base: 12, lg: 2 }}>
         <Heading fontSize={`xl`}>About us</Heading>
         <Flex flexDir={`column`} mt={`1.56rem`} gap={4}>
           <Link fontSize={`sm`}>Road map</Link>
@@ -60,6 +58,16 @@ const Footer = () => {
           <Link fontSize={`sm`}>Career</Link>
           <Link fontSize={`sm`}>Contact us</Link>
         </Flex>
+      </GridItem>
+      <GridItem
+        as={Center}
+        flexDir={`column`}
+        display={{ lg: `none` }}
+        colSpan={{ base: 12, lg: 2 }}
+        gap={32}
+      >
+        <Socials isMobile />
+        <Copyright isMobile />
       </GridItem>
     </Grid>
   );

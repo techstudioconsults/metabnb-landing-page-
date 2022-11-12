@@ -1,22 +1,38 @@
-import { Heading, Flex, Text, Image, Box } from '@chakra-ui/react';
+import { Heading, Flex, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 import { HeroImage } from '../../assets/images-and-icons';
 import SearchInput from './SearchInput';
 
 const HeroSection = () => {
   return (
-    <Flex justifyContent={`space-between`} my={5}>
-      <Flex flexDir={`column`} width={`60%`} justifyContent={`end`} pr={24}>
+    <Flex
+      className="page_alignment"
+      flexDir={{ base: `column-reverse`, lg: `row` }}
+      justifyContent={`space-between`}
+      my={5}
+    >
+      <Flex
+        flexDir={`column`}
+        width={{ lg: `60%` }}
+        justifyContent={`center`}
+        pr={{ lg: 20 }}
+        textAlign={{
+          base: `center`,
+          sm: `initial`,
+          md: `center`,
+          lg: `initial`,
+        }}
+      >
         <Heading
           className="heading_title"
-          fontSize={`56px`}
+          fontSize={`3.5rem`}
           fontWeight={`medium`}
           lineHeight={`78.4px`}
         >
           Rent a{' '}
           <Text
             as={`span`}
-            fontSize={`56px`}
+            fontSize={`3.5rem`}
             fontWeight={`bold`}
             color={`accent`}
           >
@@ -25,7 +41,7 @@ const HeroSection = () => {
           away from{' '}
           <Text
             as={`span`}
-            fontSize={`56px`}
+            fontSize={`3.5rem`}
             fontWeight={`bold`}
             color={`accent`}
           >
@@ -34,7 +50,7 @@ const HeroSection = () => {
           in the{' '}
           <Text
             as={`span`}
-            fontSize={`56px`}
+            fontSize={`3.5rem`}
             fontWeight={`bold`}
             color={`accent`}
           >
@@ -49,8 +65,12 @@ const HeroSection = () => {
         </Text>
         <SearchInput />
       </Flex>
-      <Flex width={`40%`} justifyContent={`end`}>
-        <Image alt="hero-image" src={HeroImage} />
+      <Flex width={{ lg: `40%` }} justifyContent={{ xl: `end` }}>
+        <Image
+          mx={{ base: `auto`, xl: `initial` }}
+          alt="hero-image"
+          src={HeroImage}
+        />
       </Flex>
     </Flex>
   );

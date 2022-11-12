@@ -7,12 +7,12 @@ import {
   DrawerOverlay,
   DrawerContent,
   useDisclosure,
-  Icon,
   Image,
   Link,
+  Center,
 } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Logo } from '../../assets/images-and-icons';
+import { hamburgerIcon, Logo } from '../../assets/images-and-icons';
 import Links from './NavigationLinks';
 import ButtonVariant from '../button/ButtonVariant';
 
@@ -21,7 +21,15 @@ const Sidenav = () => {
 
   return (
     <>
-      <Icon display={{ xl: `none` }} onClick={onOpen} fontSize={`2.5rem`} />
+      <Center>
+        <Image
+          cursor={`pointer`}
+          display={{ xl: `none` }}
+          onClick={onOpen}
+          src={hamburgerIcon}
+          alt="menu"
+        />
+      </Center>
 
       <Drawer
         size={{ base: `sm` }}

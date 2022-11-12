@@ -29,15 +29,16 @@ const Home = () => {
         <Flex
           alignItems={`center`}
           justifyContent={`space-between`}
-          className={`cc-container`}
+          className={`cc-container page_alignment`}
+          gap={10}
         >
-          <Center>
+          <Center width={`13.9rem`}>
             <Image alt="company-logo" src={MBToken} />
           </Center>
-          <Center>
+          <Center width={`13.9rem`}>
             <Image alt="company-logo" src={MetaMask} />
           </Center>
-          <Center>
+          <Center width={`13.9rem`}>
             <Image alt="company-logo" src={OpenSea} />
           </Center>
         </Flex>
@@ -56,7 +57,7 @@ const Home = () => {
           <GridDisplay />
         </Box>
         <Box backgroundColor={`accent`}>
-          <Flex className="cc-container" py={24}>
+          <Flex className="cc-container page_alignment" py={24}>
             <MetabnbNFTs />
           </Flex>
         </Box>
