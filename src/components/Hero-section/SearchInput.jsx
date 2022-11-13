@@ -8,7 +8,7 @@ import React from 'react';
 
 const SearchInput = () => {
   return (
-    <FormControl width={{ md: `38.7rem` }}>
+    <FormControl width={{ base: `100%`, md: `38.7rem` }}>
       <InputGroup height={`54px`}>
         <Input
           borderRadius={`8px`}
@@ -20,7 +20,7 @@ const SearchInput = () => {
           height={`100%`}
           borderRadius={`8px`}
           fontSize={`md`}
-          px={`5.2rem`}
+          px={{ base: 10, md: `5.2rem` }}
           as={`button`}
           size={`lg`}
           children="Search"
