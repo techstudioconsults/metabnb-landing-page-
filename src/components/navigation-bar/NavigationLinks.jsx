@@ -1,30 +1,61 @@
-import { Link, OrderedList, ListItem } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
+import { OrderedList, ListItem } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 import React from 'react';
+import style from './navbar.module.scss';
 
 const Links = ({ isMobile }) => {
   return (
     <OrderedList
-      display={{ base: isMobile ? `flex` : `none`, xl: `flex` }}
+      display={{ base: isMobile ? `flex` : `none`, lg: `flex` }}
       flexDir={isMobile ? `column` : `row`}
       color={isMobile ? `white` : `black`}
-      alignItems={`center`}
-      justifyContent={`space-evenly`}
-      gap={10}
-      h={`100%`}
+      alignItems={{ lg: `center` }}
+      m={0}
+      gap={{ base: 16, lg: 10 }}
+      // h={`80%`}
+      ml={{ lg: 20 }}
+      // mt={1}
     >
-      <Link as={RouterLink} to={`/`}>
-        <ListItem fontSize={`xl`}>Home</ListItem>
-      </Link>
-      <Link as={RouterLink} to={`/place-to-stay`}>
-        <ListItem fontSize={`xl`}>Place to stay</ListItem>
-      </Link>
-      <Link as={RouterLink} to={`/nfts`}>
-        <ListItem fontSize={`xl`}>NFTs</ListItem>
-      </Link>
-      <Link as={RouterLink} to={`/community`}>
-        <ListItem fontSize={`xl`}>Community</ListItem>
-      </Link>
+      <ListItem fontSize={`xl`}>
+        <NavLink
+          to={`/`}
+          className={({ isActive }) =>
+            isActive ? style.active : style.inactive
+          }
+        >
+          Home
+        </NavLink>
+      </ListItem>
+      <ListItem fontSize={`xl`}>
+        <NavLink
+          to={`/place-to-stay`}
+          className={({ isActive }) =>
+            isActive ? style.active : style.inactive
+          }
+        >
+          Place to stay
+        </NavLink>
+      </ListItem>
+      <ListItem fontSize={`xl`}>
+        <NavLink
+          to={`/nfts`}
+          className={({ isActive }) =>
+            isActive ? style.active : style.inactive
+          }
+        >
+          NFTs
+        </NavLink>
+      </ListItem>
+      <ListItem fontSize={`xl`}>
+        <NavLink
+          to={`/community`}
+          className={({ isActive }) =>
+            isActive ? style.active : style.inactive
+          }
+        >
+          Community
+        </NavLink>
+      </ListItem>
     </OrderedList>
   );
 };

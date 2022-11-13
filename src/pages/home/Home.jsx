@@ -1,13 +1,8 @@
 import { Box, Flex, Image, Center, Heading } from '@chakra-ui/react';
 import React from 'react';
 import HeroSection from '../../components/Hero-section/HeroSection';
+import { metaverse } from '../../utilities';
 
-import {
-  GridBg,
-  MBToken,
-  MetaMask,
-  OpenSea,
-} from '../../assets/images-and-icons';
 import GridDisplay from '../../components/grid-display/GridDisplay';
 import MetabnbNFTs from '../../components/metabnbNFTs/MetabnbNFTs';
 
@@ -24,7 +19,7 @@ const Home = () => {
         height={`4.375rem`}
         color={`white`}
         backgroundColor={`accent`}
-        backgroundImage={GridBg}
+        backgroundImage={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668364806/hng/Metabnb/images-and-icons/grid-png-43582_fh8mgl.png`}
       >
         <Flex
           alignItems={`center`}
@@ -33,13 +28,22 @@ const Home = () => {
           gap={10}
         >
           <Center width={`13.9rem`}>
-            <Image alt="company-logo" src={MBToken} />
+            <Image
+              alt="mbtoken-logo"
+              src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186168/hng/Metabnb/images-and-icons/Group_59537-1_fop9dr.svg`}
+            />
           </Center>
           <Center width={`13.9rem`}>
-            <Image alt="company-logo" src={MetaMask} />
+            <Image
+              alt="metamask-logo"
+              src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186164/hng/Metabnb/images-and-icons/Group_4040_qdmfbw.svg`}
+            />
           </Center>
           <Center width={`13.9rem`}>
-            <Image alt="company-logo" src={OpenSea} />
+            <Image
+              alt="opensea-logo"
+              src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186164/hng/Metabnb/images-and-icons/Frame_4041-1_uqxmwd.svg`}
+            />
           </Center>
         </Flex>
       </Box>
@@ -55,7 +59,7 @@ const Home = () => {
           Inspiration for your next adventure
         </Heading>
         <Box pb={`3.3rem`} className="cc-container">
-          <GridDisplay />
+          <GridDisplay collections={metaverse.slice(0, 8)} />
         </Box>
         <Box backgroundColor={`accent`}>
           <Flex className="cc-container page_alignment" py={24}>

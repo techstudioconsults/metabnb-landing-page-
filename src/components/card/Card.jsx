@@ -16,7 +16,12 @@ const Card = ({ image }) => {
         overflow={`hidden`}
         height={`16.563rem`}
       >
-        <Image className="cc-img-fluid" alt={`frame`} src={image}></Image>
+        <Image
+          className="cc-img-fluid"
+          alt={`frame`}
+          src={image}
+          loading="lazy"
+        ></Image>
         <Image
           p={1}
           borderRadius={`100%`}
@@ -54,11 +59,11 @@ const Card = ({ image }) => {
           </Text>
         </Flex>
         <Flex gap={2} width={`fit-content`} mt={3}>
-          <Image src={star} />
-          <Image src={star} />
-          <Image src={star} />
-          <Image src={star} />
-          <Image src={star} />
+          <Image cursor={`pointer`} src={star} />
+          <Image cursor={`pointer`} src={star} />
+          <Image cursor={`pointer`} src={star} />
+          <Image cursor={`pointer`} src={star} />
+          <Image cursor={`pointer`} src={star} />
         </Flex>
       </Box>
     </Box>

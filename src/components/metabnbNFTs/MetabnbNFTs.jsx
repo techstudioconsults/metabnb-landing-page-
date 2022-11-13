@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
-import { tripleImg } from '../../assets/images-and-icons';
+
 import ButtonVariant from '../button/ButtonVariant';
 
 const MetabnbNFTs = () => {
@@ -10,7 +10,7 @@ const MetabnbNFTs = () => {
       color={`white`}
       alignItems={`center`}
       justifyContent={`end`}
-      gap={{base: 10, lg: 32 }}
+      gap={{ base: 10, lg: 32 }}
     >
       <Box width={{ lg: `40%` }}>
         <Heading className="heading_title" fontSize={`5xl`}>
@@ -31,7 +31,10 @@ const MetabnbNFTs = () => {
         />
       </Box>
       <Box width={{ lg: `60%` }}>
-        <Image alt="three_img" src={tripleImg} />
+        <Image
+          alt="three_img"
+          src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186165/hng/Metabnb/images-and-icons/Frame_59546-1_m7v2v3.png`}
+        />
       </Box>
     </Flex>
   );

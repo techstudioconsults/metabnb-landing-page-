@@ -7,7 +7,14 @@ const DefaultLayout = ({ children }) => {
   return (
     <>
       {/* navbar */}
-      <Box className="cc-container" my="3rem">
+      <Box
+        pos={`sticky`}
+        top={0}
+        zIndex={999}
+        backgroundColor={`#ffffff90`}
+        py={`43px`}
+        backdropFilter={`blur(5px)`}
+      >
         <Navbar />
       </Box>
       {children}

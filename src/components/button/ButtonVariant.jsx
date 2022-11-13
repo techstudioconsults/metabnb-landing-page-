@@ -3,7 +3,7 @@ import { Button } from '@chakra-ui/react';
 
 const ButtonVariant = ({
   onClick,
-  isMobile,
+  display,
   bg,
   color,
   name,
@@ -13,10 +13,7 @@ const ButtonVariant = ({
   return (
     <Button
       onClick={onClick}
-      display={{
-        base: isMobile ? `block` : `none`,
-        xl: `block`,
-      }}
+      display={display}
       bg={bg}
       color={color}
       height={height}

@@ -1,6 +1,5 @@
 import { Heading, Flex, Text, Image } from '@chakra-ui/react';
 import React from 'react';
-import { HeroImage } from '../../assets/images-and-icons';
 import SearchInput from './SearchInput';
 
 const HeroSection = () => {
@@ -10,14 +9,14 @@ const HeroSection = () => {
       flexDir={{ base: `column-reverse`, xl: `row` }}
       justifyContent={`space-between`}
       my={5}
-      gap={{ base: 10, lg: `initial` }}
+      gap={{ base: 10, xl: `initial` }}
     >
       <Flex
         flexDir={`column`}
         width={{ xl: `60%` }}
         justifyContent={`center`}
         alignItems={{ base: `center`, xl: `initial` }}
-        pr={{ lg: 20 }}
+        pr={{ xl: 20 }}
         textAlign={{
           base: `center`,
           sm: `initial`,
@@ -72,7 +71,7 @@ const HeroSection = () => {
         <Image
           mx={{ base: `auto`, xl: `initial` }}
           alt="hero-image"
-          src={HeroImage}
+          src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668364170/hng/Metabnb/images-and-icons/Group_4028_1_rglugm.png`}
         />
       </Flex>
     </Flex>

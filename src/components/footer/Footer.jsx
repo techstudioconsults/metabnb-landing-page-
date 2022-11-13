@@ -9,7 +9,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import React from 'react';
-import { logoWhite } from '../../assets/images-and-icons';
+
 import Socials, { Copyright } from '../socials/Socials';
 
 const Footer = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
         <Box>
           <Image
             mx={{ base: `auto`, lg: `initial` }}
-            src={logoWhite}
+            src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186165/hng/Metabnb/images-and-icons/Group_pg8mto.png`}
             alt={`logo`}
           />
         </Box>

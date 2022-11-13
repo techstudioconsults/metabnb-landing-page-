@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -14,35 +14,30 @@ import {
   Box,
 } from '@chakra-ui/react';
 import ButtonVariant from '../button/ButtonVariant';
-import { useHistory } from 'react-router-dom';
 
-const ConnectWallet = () => {
+const ConnectWallet = ({ isSidenav }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  let history = useHistory();
 
   const openModal = () => {
     onOpen();
-    history.push(`/connect-wallet`);
   };
-
-  if (history.location.pathname === `/connect-wallet`) {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    useEffect(() => {
-      onOpen();
-    }, [onOpen]);
-  }
 
   return (
     <>
       <ButtonVariant
         onClick={openModal}
-        isMobile={false}
         bg={`accent`}
         color={`white`}
         width="170px"
         height="3em"
         name="Connect wallet"
+        display={
+          isSidenav
+            ? { base: `block`, lg: `none` }
+            : { base: `none`, lg: `block` }
+        }
       />
+
       <Modal
         size={{ base: `full`, md: `2xl` }}
         isOpen={isOpen}
@@ -52,7 +47,7 @@ const ConnectWallet = () => {
       >
         <ModalOverlay />
         <ModalContent
-          borderRadius={{ sm: `16px` }}
+          borderRadius={{ base: `16px` }}
           p={5}
           height={{ base: `100vh`, md: `initial` }}
         >
