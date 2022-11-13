@@ -2,6 +2,7 @@ import { Flex, Image, Center, Link } from '@chakra-ui/react';
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Logo } from '../../assets/images-and-icons';
+
 import ConnectWallet from '../modal/ConnectWallet';
 
 import Links from './NavigationLinks';

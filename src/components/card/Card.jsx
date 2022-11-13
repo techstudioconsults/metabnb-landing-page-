@@ -17,7 +17,19 @@ const Card = ({ image }) => {
         height={`16.563rem`}
       >
         <Image className="cc-img-fluid" alt={`frame`} src={image}></Image>
-        <Image pos={`absolute`} top={0} right={0} m={4} alt="like" src={like} />
+        <Image
+          p={1}
+          borderRadius={`100%`}
+          cursor={`pointer`}
+          pos={`absolute`}
+          top={0}
+          right={0}
+          m={4}
+          alt="like"
+          src={like}
+          opacity={0.5}
+          _hover={{ opacity: 1 }}
+        />
       </Box>
       <Box>
         <Flex

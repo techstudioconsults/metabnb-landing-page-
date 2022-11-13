@@ -12,8 +12,9 @@ function App() {
         <Suspense fallback={<GeneralLoading text={`LOADING...`} />}>
           <DefaultLayout>
             <Switch>
-              <Route exact path="/" component={HomePage} />
+              <Route path="/" component={HomePage} />
               <Route
+                
                 component={() => <GeneralLoading text="PAGE NOT FOUND" />}
               />
             </Switch>

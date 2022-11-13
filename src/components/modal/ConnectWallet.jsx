@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Modal,
   ModalOverlay,
@@ -14,13 +14,28 @@ import {
   Box,
 } from '@chakra-ui/react';
 import ButtonVariant from '../button/ButtonVariant';
+import { useHistory } from 'react-router-dom';
 
 const ConnectWallet = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  let history = useHistory();
+
+  const openModal = () => {
+    onOpen();
+    history.push(`/connect-wallet`);
+  };
+
+  if (history.location.pathname === `/connect-wallet`) {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+      onOpen();
+    }, [onOpen]);
+  }
+
   return (
     <>
       <ButtonVariant
-        onClick={onOpen}
+        onClick={openModal}
         isMobile={false}
         bg={`accent`}
         color={`white`}
@@ -28,10 +43,16 @@ const ConnectWallet = () => {
         height="3em"
         name="Connect wallet"
       />
-      <Modal size={`2xl`} isOpen={isOpen} onClose={onClose} isCentered>
+      <Modal
+        size={{ base: `full`, md: `2xl` }}
+        isOpen={isOpen}
+        onClose={onClose}
+        isCentered
+        scr
+      >
         <ModalOverlay />
         <ModalContent
-          borderRadius={`16px`}
+          borderRadius={{ sm: `16px` }}
           p={5}
           height={{ base: `100vh`, md: `initial` }}
         >
