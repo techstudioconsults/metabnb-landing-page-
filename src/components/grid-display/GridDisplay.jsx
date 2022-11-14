@@ -8,11 +8,12 @@ const GridDisplay = ({ collections }) => {
   });
   return (
     <SimpleGrid
-      // className="page_alignment"
+      className="page_alignment"
       // px={{ md: 30, lg: 20, xl: `initial` }}
       justifyItems={{ base: `center` }}
-      gap={6}
-      columns={{ base: 1, md: 2, lg: 3, xl: 4 }}
+      gridRowGap={{ base: 3, md: 6, lg: 7, xl: 4 }}
+      gridColumnGap={{ base: 6 }}
+      columns={{ base: 1, sm: 2, lg: 3, xl: 4 }}
     >
       {cardCollections}
     </SimpleGrid>

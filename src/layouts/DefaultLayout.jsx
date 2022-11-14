@@ -8,11 +8,11 @@ const DefaultLayout = ({ children }) => {
     <>
       {/* navbar */}
       <Box
-        pos={`sticky`}
+        pos={{ base: `sticky`, xl: `initial` }}
         top={0}
         zIndex={999}
         backgroundColor={`#ffffff90`}
-        py={`43px`}
+        py={{ base: 5, xl: `43px` }}
         backdropFilter={`blur(5px)`}
       >
         <Navbar />

@@ -6,14 +6,14 @@ import style from './navbar.module.scss';
 const Links = ({ isMobile }) => {
   return (
     <OrderedList
-      display={{ base: isMobile ? `flex` : `none`, lg: `flex` }}
+      display={{ base: isMobile ? `flex` : `none`, xl: `flex` }}
       flexDir={isMobile ? `column` : `row`}
       color={isMobile ? `white` : `black`}
-      alignItems={{ lg: `center` }}
+      alignItems={{ xl: `center` }}
       m={0}
-      gap={{ base: 16, lg: 10 }}
+      gap={{ base: 16, xl: 10 }}
       // h={`80%`}
-      ml={{ lg: 20 }}
+      ml={{ xl: 20 }}
       // mt={1}
     >
       <ListItem fontSize={`xl`}>

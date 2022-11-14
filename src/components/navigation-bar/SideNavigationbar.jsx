@@ -11,11 +11,13 @@ import {
   Link,
   Center,
   Box,
+  DrawerCloseButton,
 } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import { hamburgerIcon } from '../../assets/images-and-icons';
 import Links from './NavigationLinks';
 import ConnectWallet from '../modal/ConnectWallet';
+import { Copyright } from '../socials/Socials';
 
 const Sidenav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -25,7 +27,7 @@ const Sidenav = () => {
       <Center>
         <Image
           cursor={`pointer`}
-          display={{ lg: `none` }}
+          display={{ xl: `none` }}
           onClick={onOpen}
           src={hamburgerIcon}
           alt="menu"
@@ -40,6 +42,7 @@ const Sidenav = () => {
       >
         <DrawerOverlay />
         <DrawerContent p={10} bg={`black`}>
+          <DrawerCloseButton color={`white`} fontWeight={500} m={3} />
           <DrawerHeader>
             <Link as={RouterLink} to={`/`}>
               <Image
@@ -55,7 +58,9 @@ const Sidenav = () => {
               <ConnectWallet isSidenav />
             </Box>
           </DrawerBody>
-          <DrawerFooter></DrawerFooter>
+          <DrawerFooter>
+            <Copyright isMobile />
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>

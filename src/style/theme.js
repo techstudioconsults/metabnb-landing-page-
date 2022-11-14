@@ -10,11 +10,11 @@ const theme = extendTheme({
     },
   },
   breakpoints: {
-    sm: '30em', //320px
-    md: '48em', //768px
-    lg: '62em', //960px
-    xl: '80em', //1200px
-    '2xl': '96em', //1536px 4K viewport
+    sm: '576px', //756px
+    md: '768px', //768px
+    lg: '992px', //960px
+    xl: '1200px', //1200px
+    '2xl': '1440px', //1536px 4K viewport
   },
   components: {
     Checkbox: {

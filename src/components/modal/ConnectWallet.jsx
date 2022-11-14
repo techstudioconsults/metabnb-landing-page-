@@ -33,8 +33,8 @@ const ConnectWallet = ({ isSidenav }) => {
         name="Connect wallet"
         display={
           isSidenav
-            ? { base: `block`, lg: `none` }
-            : { base: `none`, lg: `block` }
+            ? { base: `block`, xl: `none` }
+            : { base: `none`, xl: `block` }
         }
       />
 
