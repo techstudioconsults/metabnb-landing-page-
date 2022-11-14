@@ -49,12 +49,13 @@ const ConnectWallet = ({ isSidenav }) => {
         <ModalOverlay />
         <ModalContent
           borderRadius={{ base: `16px` }}
-          p={5}
           height={{ base: `100vh`, md: `initial` }}
         >
-          <ModalHeader fontSize={`2xl`}>Connet Wallet</ModalHeader>
-          <ModalCloseButton size={`xs`} p={1} my={7} mx={8} />
-          <ModalBody>
+          <ModalHeader p={8} fontSize={`2xl`}>
+            Connet Wallet
+          </ModalHeader>
+          <ModalCloseButton size={`xs`} p={1} my={6} mx={8} />
+          <ModalBody borderTop={`1px solid lightgrey`} p={8}>
             <Text my={`1rem`}>Choose your preferred wallet:</Text>
             <Box width={`100%`}>
               <Button
