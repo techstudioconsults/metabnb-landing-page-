@@ -15,6 +15,8 @@ const SearchInput = () => {
           fontSize={`sm`}
           placeholder="Search for location"
           height={`100%`}
+          _focus={{ boxShadow: `0px 0px 0px 3px #A0227930` }}
+          _hover={{ boxShadow: `0px 0px 0px 3px #A0227930` }}
         />
         <InputRightAddon
           height={`100%`}
@@ -26,6 +28,7 @@ const SearchInput = () => {
           children="Search"
           backgroundColor={`accent`}
           color={`white`}
+          _hover={{ boxShadow: `0px 0px 0px 3px #A0227930` }}
         />
       </InputGroup>
     </FormControl>
