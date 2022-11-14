@@ -1,4 +1,4 @@
-import { OrderedList, ListItem } from '@chakra-ui/react';
+import { OrderedList, ListItem, Image } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import style from './navbar.module.scss';
@@ -12,9 +12,7 @@ const Links = ({ isMobile }) => {
       alignItems={{ xl: `center` }}
       m={0}
       gap={{ base: 16, xl: 10 }}
-      // h={`80%`}
       ml={{ xl: 20 }}
-      // mt={1}
     >
       <ListItem fontSize={`xl`}>
         <NavLink
@@ -23,6 +21,13 @@ const Links = ({ isMobile }) => {
             isActive ? style.active : style.inactive
           }
         >
+          <Image
+            display={{ base: `inline`, xl: `none` }}
+            mr={2}
+            w="1rem"
+            src="https://img.icons8.com/material-outlined/24/FFFFFF/home-page.png"
+            alt="home"
+          />
           Home
         </NavLink>
       </ListItem>
@@ -33,6 +38,13 @@ const Links = ({ isMobile }) => {
             isActive ? style.active : style.inactive
           }
         >
+          <Image
+            display={{ base: `inline`, xl: `none` }}
+            mr={2}
+            w="1rem"
+            src="https://img.icons8.com/metro/26/FFFFFF/place-marker.png"
+            alt="home"
+          />
           Place to stay
         </NavLink>
       </ListItem>
@@ -43,6 +55,13 @@ const Links = ({ isMobile }) => {
             isActive ? style.active : style.inactive
           }
         >
+          <Image
+            display={{ base: `inline`, xl: `none` }}
+            mr={2}
+            w="1rem"
+            src="https://img.icons8.com/external-glyph-wichaiwi/64/FFFFFF/external-nft-non-fungible-token-glyph-wichaiwi-8.png"
+            alt="nft"
+          />
           NFTs
         </NavLink>
       </ListItem>
@@ -53,6 +72,13 @@ const Links = ({ isMobile }) => {
             isActive ? style.active : style.inactive
           }
         >
+          <Image
+            display={{ base: `inline`, xl: `none` }}
+            mr={2}
+            w="1rem"
+            src="https://img.icons8.com/metro/26/FFFFFF/conference-call.png"
+            alt="community"
+          />
           Community
         </NavLink>
       </ListItem>

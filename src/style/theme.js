@@ -47,6 +47,7 @@ const theme = extendTheme({
   },
   colors: {
     accent: `#A02279`,
+    accentLight: `#A0227950`,
     textBlack: `#434343`,
     black: `#1D1D1E`,
     grey: `#D7D7D7`,

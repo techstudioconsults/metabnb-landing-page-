@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
+import { Flex, Image, Link, Text } from '@chakra-ui/react';
 import React from 'react';
 import {
   copyright,
@@ -15,9 +15,33 @@ export default function Socials({ isMobile }) {
       mt={{ lg: `96px` }}
       mb={{ lg: `55px` }}
     >
-      <Image src={facebook} alt={`logo`} />
-      <Image src={instagram} alt={`logo`} />
-      <Image src={twitter} alt={`logo`} />
+      <Link
+        isExternal
+        href="#"
+        _hover={{ background: `accentLight` }}
+        p={2}
+        borderRadius={`100%`}
+      >
+        <Image src={facebook} alt={`logo`} />
+      </Link>
+      <Link
+        isExternal
+        href="#"
+        _hover={{ background: `accentLight` }}
+        p={2}
+        borderRadius={`100%`}
+      >
+        <Image src={instagram} alt={`logo`} />
+      </Link>
+      <Link
+        isExternal
+        href="#"
+        _hover={{ background: `accentLight` }}
+        p={2}
+        borderRadius={`100%`}
+      >
+        <Image src={twitter} alt={`logo`} />
+      </Link>
     </Flex>
   );
 }
