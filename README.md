@@ -1,68 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p >
+  <a href="" rel="noopener">
+ <img src="https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186165/hng/Metabnb/images-and-icons/Group_pg8mto.png" alt="metabnb"></a>
+</p>
 
-## Available Scripts
+<h3>Metabnb</h3>
+<p> A virtual service that provides you access to luxury and affordable houses in the metaverse.
+    <br>
+    <br>
+    <br>
+</p>
 
-In the project directory, you can run:
+## 📝 Table of Contents
 
-### `yarn start`
+- [About](#about)
+- [Built Using](#built_using)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧐 About <a name = "about"></a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This Project is the third task in the HNG9 intenship
 
-### `yarn test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Node v16 or higher](https://nodejs.org/en/)
 
-### `yarn build`
+### Installing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In order to run this project on your local machine or system, you will need to clone the source code by doing
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+git clone https://github.com/kinxlo/metabnb.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+or you could download the repo locally then run
 
-### `yarn eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+if you prefer yarn
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+once the modules have been installed, in the root of the project run
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm start or yarn start
+```
 
-## Learn More
+this would start the dev server and the project will display in your browser.
+<!-- See [deployment](#deployment) for notes on how to deploy the project on a live system. -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- ## 🚀 Deployment <a name = "deployment"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Add additional notes about how to deploy this on a live system. -->
 
-### Code Splitting
+## ⛏️ Built Using <a name = "built_using"></a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- [React](https://reactjs.org/) - Javascript library
+- [ChakraUI](https://chakra-ui.com/) - Content Manager
+- [Cloudinary](https://cloudinary.com/) - Content Manager
 
-### Analyzing the Bundle Size
+## ✍️ Authors <a name = "authors"></a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [Kingsley Solomon](https://github.com/kinxlo) - Frontend
 
-### Making a Progressive Web App
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [HNG9](https://training.zuri.team/)
+<!-- - [@intuneteq](https://github.com/Intuneteq) - Backend(Sanity) -->
