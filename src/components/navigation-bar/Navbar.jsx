@@ -32,9 +32,10 @@ const Navbar = () => {
       alignItems={`center`}
       height={`3rem`}
     >
-      <Center w={`14.6rem`}>
+      <Center>
         <Link as={RouterLink} to={`/`}>
           <Image
+            w={{ base: `70%`, sm: `100%` }}
             alt="logo"
             src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186165/hng/Metabnb/images-and-icons/Group-1_ytb0ig.png`}
           />

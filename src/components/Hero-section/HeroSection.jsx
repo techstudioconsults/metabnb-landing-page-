@@ -19,8 +19,6 @@ const HeroSection = () => {
         pr={{ xl: 20 }}
         textAlign={{
           base: `center`,
-          sm: `initial`,
-          md: `center`,
           xl: `initial`,
         }}
       >

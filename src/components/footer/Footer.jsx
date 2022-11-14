@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   Grid,
   GridItem,
@@ -9,6 +8,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
 import Socials, { Copyright } from '../socials/Socials';
 
@@ -22,13 +22,13 @@ const Footer = () => {
       textAlign={{ base: `center`, lg: `initial` }}
     >
       <GridItem colSpan={{ base: 12, lg: 4 }}>
-        <Box>
+        <Link as={RouterLink} to={`/`}>
           <Image
             mx={{ base: `auto`, lg: `initial` }}
             src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186165/hng/Metabnb/images-and-icons/Group_pg8mto.png`}
             alt={`logo`}
           />
-        </Box>
+        </Link>
         <Socials />
         <Copyright />
       </GridItem>

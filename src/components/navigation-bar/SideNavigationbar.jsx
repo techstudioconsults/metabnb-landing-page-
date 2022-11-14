@@ -41,11 +41,12 @@ const Sidenav = () => {
         onClose={onClose}
       >
         <DrawerOverlay />
-        <DrawerContent p={10} bg={`black`}>
-          <DrawerCloseButton color={`white`} fontWeight={500} m={3} />
-          <DrawerHeader>
+        <DrawerContent bg={`black`}  px={10}>
+          <DrawerCloseButton color={`white`} my={2} />
+          <DrawerHeader py={5}>
             <Link as={RouterLink} to={`/`}>
               <Image
+                w={`60%`}
                 cursor={`pointer`}
                 src={`https://res.cloudinary.com/kingsleysolomon/image/upload/v1668186165/hng/Metabnb/images-and-icons/Group-1_ytb0ig.png`}
                 alt="metabnb"
@@ -58,7 +59,7 @@ const Sidenav = () => {
               <ConnectWallet isSidenav />
             </Box>
           </DrawerBody>
-          <DrawerFooter>
+          <DrawerFooter color={`gray`} justifyContent={`start`}>
             <Copyright isMobile />
           </DrawerFooter>
         </DrawerContent>
