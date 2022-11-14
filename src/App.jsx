@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <ErrorBoundary>
-        <Suspense fallback={<GeneralLoading text={`LOADING...`} />}>
-          <DefaultLayout>
+        <DefaultLayout>
+          <Suspense fallback={<GeneralLoading text={`LOADING...`} />}>
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/place-to-stay" element={<PlaceToStay />} />
@@ -20,8 +20,8 @@ function App() {
                 element={<GeneralLoading text="PAGE NOT FOUND" />}
               />
             </Routes>
-          </DefaultLayout>
-        </Suspense>
+          </Suspense>
+        </DefaultLayout>
       </ErrorBoundary>
     </BrowserRouter>
   );

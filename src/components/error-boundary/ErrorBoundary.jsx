@@ -1,5 +1,5 @@
-import { Box, Text } from '@chakra-ui/react';
 import React from 'react';
+import GeneralLoading from '../general-loading/GeneralLoading';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -17,11 +17,7 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return (
-        <Box>
-          <Text>Something Broke in your code.</Text>
-        </Box>
-      );
+      return <GeneralLoading text={`Something broke in your code.`} />;
     }
     return this.props.children;
   }
