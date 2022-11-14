@@ -7,7 +7,11 @@ import { metaverse } from '../../utilities';
 const PlaceToStay = () => {
   return (
     <main>
-      <Box className="cc-container page_alignment" mt={`127px`} mb={`77px`}>
+      <Box
+        className="cc-container page_alignment"
+        mt={{ base: 10, xl: `127px` }}
+        mb={`77px`}
+      >
         <PlaceToStayTab />
       </Box>
       <Box className="cc-container" mb={`5.75rem`}>

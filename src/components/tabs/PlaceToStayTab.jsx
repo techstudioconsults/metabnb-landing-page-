@@ -55,9 +55,11 @@ const PlaceToStayTab = () => {
       <Select
         iconColor="accent"
         variant={`filled`}
-        focusBorderColor="accent"
+        focusBorderColor="transparent"
         size={`lg`}
         display={{ xl: `none` }}
+        _focus={{ boxShadow: `0px 0px 0px 4px #A0227930` }}
+        _hover={{ boxShadow: `0px 0px 0px 4px #A0227930` }}
       >
         {tabsSelect}
       </Select>

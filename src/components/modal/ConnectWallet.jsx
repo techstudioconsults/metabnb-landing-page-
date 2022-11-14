@@ -25,7 +25,7 @@ const ConnectWallet = ({ isSidenav }) => {
   return (
     <>
       <ButtonVariant
-        hover={{ bg: `accentLight` }}
+        hover={{ boxShadow: `0px 0px 0px 4px #A0227950` }}
         onClick={openModal}
         bg={`accent`}
         color={`white`}
