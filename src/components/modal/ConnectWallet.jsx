@@ -25,10 +25,11 @@ const ConnectWallet = ({ isSidenav }) => {
   return (
     <>
       <ButtonVariant
+        hover={{ bg: `accentLight` }}
         onClick={openModal}
         bg={`accent`}
         color={`white`}
-        width="170px"
+        width={isSidenav ? `100%` : { base: `none`, xl: `block` }}
         height="3em"
         name="Connect wallet"
         display={
@@ -62,9 +63,10 @@ const ConnectWallet = ({ isSidenav }) => {
                 borderRadius={`12px`}
                 border={`1px solid #CFD8DC`}
                 mb={`1rem`}
-                bg={`#CFD8DC50`}
+                bg={`white`}
                 height={`68px`}
                 width={`100%`}
+                _hover={{ bg: `#F1F1F1` }}
               >
                 <Center gap={3}>
                   <Image
@@ -88,9 +90,10 @@ const ConnectWallet = ({ isSidenav }) => {
                 borderRadius={`12px`}
                 border={`1px solid #CFD8DC`}
                 my={`1rem`}
-                bg={`#CFD8DC50`}
+                bg={`white`}
                 height={`68px`}
                 width={`100%`}
+                _hover={{ bg: `#F1F1F1` }}
               >
                 <Center gap={3}>
                   <Image

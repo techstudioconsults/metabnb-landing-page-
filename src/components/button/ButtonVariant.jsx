@@ -9,6 +9,7 @@ const ButtonVariant = ({
   name,
   width,
   height,
+  hover
 }) => {
   return (
     <Button
@@ -19,6 +20,7 @@ const ButtonVariant = ({
       height={height}
       width={width}
       borderRadius={`10px`}
+      _hover={hover}
     >
       {name}
     </Button>

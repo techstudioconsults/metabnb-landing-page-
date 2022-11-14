@@ -60,12 +60,12 @@ const HeroSection = () => {
 
         <Text fontSize={`2xl`} my={12} lineHeight={`2.18rem`}>
           we provide you access to luxury and affordable houses in the
-          metaverse, get a chance to turn your imagination to reality at
-          your comfort zone
+          metaverse, get a chance to turn your imagination to reality at your
+          comfort zone
         </Text>
         <SearchInput />
       </Flex>
-      <Flex width={{ xl: `40%` }} justifyContent={{ xl: `end` }}>
+      <Flex width={{ xl: `50%`, '2xl': `40%` }} justifyContent={{ xl: `end` }}>
         <Image
           mx={{ base: `auto`, xl: `initial` }}
           alt="hero-image"

@@ -52,7 +52,13 @@ const PlaceToStayTab = () => {
       >
         {tabsBtn}
       </Flex>
-      <Select size={`lg`} display={{ xl: `none` }}>
+      <Select
+        iconColor="accent"
+        variant={`filled`}
+        focusBorderColor="accent"
+        size={`lg`}
+        display={{ xl: `none` }}
+      >
         {tabsSelect}
       </Select>
       <Button
