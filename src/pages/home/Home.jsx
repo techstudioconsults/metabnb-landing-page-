@@ -15,6 +15,12 @@ const Home = () => {
       </Box>
       {/* banner */}
       <Box
+        border={{
+          base: `1px solid red`,
+          md: `2px solid green`,
+          lg: ``,
+          xl: `5px solid white`,
+        }}
         display={`flex`}
         height={`4.375rem`}
         color={`white`}

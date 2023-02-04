@@ -9,6 +9,7 @@ const theme = extendTheme({
       },
     },
   },
+
   breakpoints: {
     sm: '576px', //756px
     md: '768px', //768px
@@ -16,6 +17,7 @@ const theme = extendTheme({
     xl: '1200px', //1200px
     '2xl': '1440px', //1536px 4K viewport
   },
+
   components: {
     Checkbox: {
       baseStyle: {
@@ -140,6 +142,7 @@ const theme = extendTheme({
     72: '18rem',
     80: '20rem',
     96: '24rem',
+    97: '30rem'
   },
   config: {
     initialColorMode: 'light',

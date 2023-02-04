@@ -9,7 +9,7 @@ const ButtonVariant = ({
   name,
   width,
   height,
-  hover
+  hover,
 }) => {
   return (
     <Button
@@ -28,3 +28,4 @@ const ButtonVariant = ({
 };
 
 export default ButtonVariant;
+
