@@ -67,8 +67,3 @@ Add additional notes about how to deploy this on a live system. -->
 ## ✍️ Authors <a name = "authors"></a>
 
 - [Kingsley Solomon](https://github.com/kinxlo) - Frontend
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- [HNG9](https://training.zuri.team/)
-<!-- - [@intuneteq](https://github.com/Intuneteq) - Backend(Sanity) -->
